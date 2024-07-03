@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="search">
+            <img src="icons/search.svg" alt="">
+            <input placeholder="Поиск" type="text">
+        </div>
+        <nav>
+            <img class="add" src="icons/add.svg" alt="">
+            <img class="labels" src="icons/label.svg" alt="">
+            <img class="logout" src="icons/logout.svg" alt="">
+        </nav>
+    </header>
+    <main>
+        <div class="taglist">
+        </div>
+        <div class="notes">
+        </div>
+    </main>
+    <div class="note_form_wrapper">
+        <form class="note_form" action="">
+            <div data-placeholder="Введите название..." contenteditable="true" class="title"></div>
+            <div data-placeholder="Введите содержание..." contenteditable="true" class="content"></div>
+            <div class="form_tags"></div>
+        </form>
+    </div>
+    <div class="tag_form_wrapper">
+        <form class="tag_form">
+            <div class="add_tag">
+                <div data-placeholder="Добавить ярлык..." contenteditable="true"></div>
+                <img src="icons/check.svg" alt="">
+            </div>
+            <div class="tag_options">
+                <div class="tag_option">
+                    <img src="icons/delete.svg" alt="">
+                    <div data-placeholder="Новое название..." contenteditable="true">Study</div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
